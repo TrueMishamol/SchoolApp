@@ -1,0 +1,2 @@
+CREATE DATABASE SchoolDataBase
+COLLATE Cyrillic_General_CI_AS;

@@ -1,0 +1,45 @@
+﻿<Page x:Class="SchoolApp.Pages.MenuPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:SchoolApp.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="MenuPage">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Верхняя кнопка -->
+        <Button x:Name="ClassesButton" Content="Классы"></Button>
+
+        <!-- Нижние две колонки с кнопками --> 
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <!-- Колонка слева -->
+            <StackPanel Grid.Column="0" VerticalAlignment="Center">
+                <Button x:Name="AttendanceButton" Content="Посещаемость"></Button>
+                <Button x:Name="GradesButton" Content="Оценки"></Button>
+                <Button x:Name="LessonsButton" Content="Уроки"></Button>
+                <Button x:Name="LessonsAddEditButton" Content="Добавить урок"></Button>
+            </StackPanel>
+
+            <!-- Колонка справа -->
+            <StackPanel Grid.Column="1" VerticalAlignment="Center">
+                <Button x:Name="StudentsButton" Content="Ученики"></Button>
+                <Button x:Name="StudentsAddEditButton" Content="Добавить ученика"></Button>
+                <Button x:Name="TeachersButton" Content="Учителя"></Button>
+                <Button x:Name="TeachersAddEditButton" Content="Добавить учителя"></Button>
+            </StackPanel>
+
+        </Grid>
+    </Grid>
+</Page>

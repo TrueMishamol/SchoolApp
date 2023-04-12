@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="8fbdbad0cbf7433e8cd964c80d22f99a" Name="Diagram1" ZoomLevel="63">
+        <EntityTypeShape EntityType="SchoolDataBaseModel.Attendance" Width="1.5" PointX="5.25" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SchoolDataBaseModel.Class" Width="1.5" PointX="0.75" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="SchoolDataBaseModel.Grade" Width="1.5" PointX="5.25" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SchoolDataBaseModel.Lesson" Width="1.5" PointX="3" PointY="7.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SchoolDataBaseModel.Student" Width="1.5" PointX="3" PointY="3.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SchoolDataBaseModel.Subject" Width="1.5" PointX="1.5" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SchoolDataBaseModel.Teacher" Width="1.5" PointX="0.75" PointY="7.125" IsExpanded="true" />
+        <AssociationConnector Association="SchoolDataBaseModel.FK__Attendanc__Lesso__47DBAE45" ManuallyRouted="false" />
+        <AssociationConnector Association="SchoolDataBaseModel.FK__Attendanc__Stude__46E78A0C" ManuallyRouted="false" />
+        <AssociationConnector Association="SchoolDataBaseModel.FK__Students__ClassI__3A81B327" ManuallyRouted="false" />
+        <AssociationConnector Association="SchoolDataBaseModel.FK__Grades__LessonId__440B1D61" ManuallyRouted="false" />
+        <AssociationConnector Association="SchoolDataBaseModel.FK__Grades__StudentI__4316F928" ManuallyRouted="false" />
+        <AssociationConnector Association="SchoolDataBaseModel.FK__Lessons__Teacher__403A8C7D" ManuallyRouted="false" />
+        <AssociationConnector Association="SchoolDataBaseModel.FK__Teachers__Subjec__3D5E1FD2" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

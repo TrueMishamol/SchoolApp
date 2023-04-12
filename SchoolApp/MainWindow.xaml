@@ -1,0 +1,45 @@
+﻿<Window x:Class="SchoolApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SchoolApp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+
+        <Grid Background="#ffffff">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <!-- Верхняя панель -->
+            <Grid Grid.Row="0" Background="#14346f">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <!-- Логотип -->
+                <Image Grid.Column="0" Source="Logo.png" Width="50" Height="50" Margin="10"/>
+
+                <!-- Название приложения -->
+                <TextBlock Grid.Column="1" Text="Школьный журнал" FontSize="24" FontWeight="Bold" Foreground="#ffffff" Margin="10"/>
+                
+                <!-- Кнопка "Назад" -->
+                <Button x:Name="BackButton" Grid.Column="2" Content="Назад" Click="BackButton_Click"/>
+                
+            </Grid>
+
+            <!-- Поле для отображения страниц -->
+            <Frame Grid.Row="1" Name="PagesFrame" ContentRendered="PagesFrame_ContentRendered"/>
+
+            <!-- Нижняя панель -->
+            <Border Grid.Row="2" Background="#308bd2" Height="30"/>
+        </Grid>
+
+    </Grid>
+</Window>
