@@ -10,5 +10,28 @@
 
     <Grid>
         
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="Добавить/Редактировать Ученика" Margin="12"/>
+
+        <StackPanel Grid.Row="1" Margin="12">
+            <TextBlock Text="Фио" Margin="12,12,12,2"/>
+            <TextBox Text="{Binding FullName}" Margin="0,0,0,12"/>
+            <TextBlock Text="День рождения" Margin="12,12,12,2"/>
+            <TextBox Text="{Binding PhoneNumber}" Margin="0,0,0,12"/>
+
+            <!--<DatePicker Date="{Binding DateOfBirth}" Margin="0,0,0,12"/>-->
+            <TextBlock Text="Номер телефона"/>
+            <TextBox Text="{Binding PhoneNumber}"/>
+            <TextBlock Text="Электронная почта"/>
+            <TextBox Text="{Binding Email}"/>
+            <TextBlock Text="Класс"/>
+            <ComboBox ItemsSource="{Binding Classes}" SelectedItem="{Binding SelectedClass}"/>
+            <Button Content="Сохранить" Command="{Binding SaveStudentCommand}" Margin="0,12,0,0"/>
+        </StackPanel>
+        
     </Grid>
 </Page>

@@ -25,9 +25,8 @@
 
             <!-- Колонка слева -->
             <StackPanel Grid.Column="0" VerticalAlignment="Center">
-                <Button x:Name="ClassesButton" Content="Классы" Click="ClassesButton_Click"></Button>
-
-                <Button x:Name="AttendanceButton" Content="Посещаемость" Click="AttendanceButton_Click"></Button>
+                <!--<Button x:Name="ClassesButton" Content="Классы" Click="ClassesButton_Click"></Button>-->
+                <!--<Button x:Name="AttendanceButton" Content="Посещаемость" Click="AttendanceButton_Click"></Button>-->
                 <Button x:Name="LessonsAddEditButton" Content="Добавить урок" Click="LessonsAddEditButton_Click"></Button>
                 <Button x:Name="StudentsAddEditButton" Content="Добавить ученика" Click="StudentsAddEditButton_Click"></Button>
                 <Button x:Name="TeachersAddEditButton" Content="Добавить учителя" Click="TeachersAddEditButton_Click"></Button>

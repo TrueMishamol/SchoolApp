@@ -44,7 +44,7 @@ namespace SchoolApp.Pages {
         }
 
         private void TeachersAddEditButton_Click(object sender, RoutedEventArgs e) {
-            SwitchMainFrame.MainFrame.Navigate(new TeachersAddEditPage());
+            SwitchMainFrame.MainFrame.Navigate(new TeachersAddEditPage(null));
         }
     }
 }

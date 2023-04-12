@@ -18,8 +18,18 @@ namespace SchoolApp.Pages {
     /// Interaction logic for TeachersAddEditPage.xaml
     /// </summary>
     public partial class TeachersAddEditPage : Page {
-        public TeachersAddEditPage() {
+
+        private Teacher _selectedTeacher = new Teacher();
+
+        public TeachersAddEditPage(Teacher selectedTeacher) {
             InitializeComponent();
+
+            if (selectedTeacher != null) {
+                _selectedTeacher = selectedTeacher;
+            }
+
+            DataContext = _selectedTeacher;
+            // ! ComboHere
         }
     }
 }
