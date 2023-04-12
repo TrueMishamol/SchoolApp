@@ -20,16 +20,10 @@
             <DataGrid x:Name="DataGrid" Grid.Row="0" ItemsSource="{Binding Lessons}" AutoGenerateColumns="False" IsReadOnly="True">
                 <DataGrid.Columns>
 
-                    <!-- Столбец Название урока -->
+                    <!-- Столбцы -->
                     <DataGridTextColumn Header="Название урока" Binding="{Binding LessonName}" Width="*"/>
-
-                    <!-- Столбец Учитель -->
                     <DataGridTextColumn Header="Учитель" Binding="{Binding Teacher.FullName}" Width="*"/>
-                    
-                    <!-- Столбец Дата урока -->
                     <DataGridTextColumn Header="Дата урока" Binding="{Binding LessonDate}" Width="100"/>
-
-                    <!-- Столбец Время урока -->
                     <DataGridTextColumn Header="Время урока" Binding="{Binding LessonTime}" Width="100"/>
 
                     <!-- Столбец Действия -->
@@ -43,6 +37,7 @@
                             </DataTemplate>
                         </DataGridTemplateColumn.CellTemplate>
                     </DataGridTemplateColumn>
+                    
                 </DataGrid.Columns>
             </DataGrid>
 
