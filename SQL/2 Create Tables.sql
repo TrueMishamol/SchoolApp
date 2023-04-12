@@ -1,4 +1,4 @@
-﻿-- Создание таблицы Classes
+-- Создание таблицы Classes
 CREATE TABLE Classes (
   Id INT PRIMARY KEY IDENTITY(1,1),
   ClassNumber INT NOT NULL,
