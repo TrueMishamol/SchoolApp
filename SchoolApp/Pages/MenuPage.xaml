@@ -15,7 +15,6 @@
         </Grid.RowDefinitions>
 
         <!-- Верхняя кнопка -->
-        <Button x:Name="ClassesButton" Content="Классы" Click="ClassesButton_Click"></Button>
 
         <!-- Нижние две колонки с кнопками --> 
         <Grid Grid.Row="1">
@@ -26,18 +25,21 @@
 
             <!-- Колонка слева -->
             <StackPanel Grid.Column="0" VerticalAlignment="Center">
+                <Button x:Name="ClassesButton" Content="Классы" Click="ClassesButton_Click"></Button>
+
                 <Button x:Name="AttendanceButton" Content="Посещаемость" Click="AttendanceButton_Click"></Button>
                 <Button x:Name="GradesButton" Content="Оценки" Click="GradesButton_Click"></Button>
-                <Button x:Name="LessonsButton" Content="Уроки" Click="LessonsButton_Click"></Button>
                 <Button x:Name="LessonsAddEditButton" Content="Добавить урок" Click="LessonsAddEditButton_Click"></Button>
+                <Button x:Name="StudentsAddEditButton" Content="Добавить ученика" Click="StudentsAddEditButton_Click"></Button>
+                <Button x:Name="TeachersButton" Content="Учителя" Click="TeachersButton_Click"></Button>
+                <Button x:Name="TeachersAddEditButton" Content="Добавить учителя" Click="TeachersAddEditButton_Click"></Button>
             </StackPanel>
 
             <!-- Колонка справа -->
             <StackPanel Grid.Column="1" VerticalAlignment="Center">
                 <Button x:Name="StudentsButton" Content="Ученики" Click="StudentsButton_Click"></Button>
-                <Button x:Name="StudentsAddEditButton" Content="Добавить ученика" Click="StudentsAddEditButton_Click"></Button>
-                <Button x:Name="TeachersButton" Content="Учителя" Click="TeachersButton_Click"></Button>
-                <Button x:Name="TeachersAddEditButton" Content="Добавить учителя" Click="TeachersAddEditButton_Click"></Button>
+                <Button x:Name="LessonsButton" Content="Уроки" Click="LessonsButton_Click"></Button>
+
             </StackPanel>
 
         </Grid>
