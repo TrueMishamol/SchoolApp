@@ -15,6 +15,15 @@ namespace SchoolApp
     
     public partial class SchoolDataBaseEntities : DbContext
     {
+        private static SchoolDataBaseEntities _context;
+
+        public static SchoolDataBaseEntities GetContext() {
+            if (_context == null)
+                _context = new SchoolDataBaseEntities();
+
+            return _context;
+        }
+
         public SchoolDataBaseEntities()
             : base("name=SchoolDataBaseEntities")
         {

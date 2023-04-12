@@ -21,5 +21,12 @@ namespace SchoolApp.Pages {
         public StudentsPage() {
             InitializeComponent();
         }
+
+        private void Page_IsVisibleChanged(object sender, DependencyPropertyChangedEventArgs e) {
+            if (Visibility == Visibility.Visible) {
+                SchoolDataBaseEntities.GetContext().ChangeTracker.Entries().ToList().ForEach(p => p.Reload());
+                DataGrid.ItemsSource = SchoolDataBaseEntities.GetContext().Students.ToList();
+            }
+        }
     }
 }

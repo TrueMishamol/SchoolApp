@@ -6,7 +6,7 @@
       xmlns:local="clr-namespace:SchoolApp.Pages"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="StudentsPage">
+      Title="StudentsPage" IsVisibleChanged="Page_IsVisibleChanged">
 
     <Grid>
 
@@ -17,16 +17,17 @@
             </Grid.RowDefinitions>
 
             <!-- Таблица с данными -->
-            <DataGrid Grid.Row="0" ItemsSource="{Binding Students}" AutoGenerateColumns="False" IsReadOnly="True">
+            <DataGrid x:Name="DataGrid" Grid.Row="0" ItemsSource="{Binding Students}" AutoGenerateColumns="False" IsReadOnly="True">
                 <DataGrid.Columns>
                     
                     <!-- Столбцы -->
-                    <DataGridTextColumn Header="Фамилия" Binding="{Binding Surname}" Width="*"/>
-                    <DataGridTextColumn Header="Имя" Binding="{Binding Name}" Width="*"/>
-                    <DataGridTextColumn Header="Отчество" Binding="{Binding Patronymic}" Width="*"/>
-                    <DataGridTextColumn Header="Дата рождения" Binding="{Binding DateOfBirth}" Width="*"/>
-                    <DataGridTextColumn Header="Класс" Binding="{Binding Class}" Width="*"/>
-                    
+                    <DataGridTextColumn Header="Фамилия Имя Отчество" Binding="{Binding FullName}" Width="*"/>
+                    <DataGridTextColumn Header="Дата рождения" Binding="{Binding BirthDate}" Width="*"/>
+                    <DataGridTextColumn Header="Класс" Binding="{Binding ClassId.ClassNumber}" Width=".3*"/>
+                    <DataGridTextColumn Header="Буква" Binding="{Binding ClassId.ClassLetter}" Width=".3*"/>
+                    <DataGridTextColumn Header="Телефон" Binding="{Binding PhoneNumber}" Width="*"/>
+                    <DataGridTextColumn Header="Почта" Binding="{Binding Email}" Width="*"/>
+
                     <!-- Столбец Действия -->
                     <DataGridTemplateColumn Header="Действия" Width="Auto">
                         <DataGridTemplateColumn.CellTemplate>
