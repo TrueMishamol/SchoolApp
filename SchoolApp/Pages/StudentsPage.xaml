@@ -24,6 +24,7 @@
                     <DataGridTextColumn Header="Фамилия Имя Отчество" Binding="{Binding FullName}" Width="*"/>
                     <DataGridTextColumn Header="Дата рождения" Binding="{Binding BirthDate}" Width="*"/>
                     
+                    <!-- Класс -->
                     <DataGridTemplateColumn Header="Класс" Width=".3*">
                         <DataGridTemplateColumn.CellTemplate>
                             <DataTemplate>
@@ -35,6 +36,7 @@
                         </DataGridTemplateColumn.CellTemplate>
                     </DataGridTemplateColumn>
                     
+                    <!-- Столбцы -->
                     <DataGridTextColumn Header="Телефон" Binding="{Binding PhoneNumber}" Width="*"/>
                     <DataGridTextColumn Header="Почта" Binding="{Binding Email}" Width="*"/>
 
