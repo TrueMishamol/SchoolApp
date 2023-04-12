@@ -21,11 +21,11 @@
                 <DataGrid.Columns>
                     
                     <!-- Столбцы -->
-                    <DataGridTextColumn Header="Фамилия Имя Отчество" Binding="{Binding FullName}" Width="*"/>
-                    <DataGridTextColumn Header="Дата рождения" Binding="{Binding BirthDate}" Width="*"/>
+                    <DataGridTextColumn Header="Фамилия Имя Отчество" Binding="{Binding FullName}" Width="2*"/>
+                    <DataGridTextColumn Header="Дата рождения" Binding="{Binding BirthDate}" Width="102"/>
                     
                     <!-- Класс -->
-                    <DataGridTemplateColumn Header="Класс" Width=".3*">
+                    <DataGridTemplateColumn Header="Класс" Width="42">
                         <DataGridTemplateColumn.CellTemplate>
                             <DataTemplate>
                                 <StackPanel Orientation="Horizontal">
@@ -37,7 +37,7 @@
                     </DataGridTemplateColumn>
                     
                     <!-- Столбцы -->
-                    <DataGridTextColumn Header="Телефон" Binding="{Binding PhoneNumber}" Width="*"/>
+                    <DataGridTextColumn Header="Телефон" Binding="{Binding PhoneNumber}" Width="102"/>
                     <DataGridTextColumn Header="Почта" Binding="{Binding Email}" Width="*"/>
 
                     <!-- Столбец Действия -->
